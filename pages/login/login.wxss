@@ -1,0 +1,92 @@
+/* pages/login/login.wxss */
+
+page {
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+view {
+  width: 100%;
+  height: auto;
+  line-height: 0;
+}
+
+.img_icon_bg {
+  margin-top: 61px;
+  text-align: center;
+}
+
+.img_icon {
+  width: 95px;
+  height: 95px;
+}
+
+.user_bg {
+  height: 44px;
+  margin-top: 69px;
+  display: flex;
+  flex-direction: row;
+  padding-left: 24px;
+  padding-right: 24px;
+  align-items: center;
+}
+
+.user_img {
+  width: 17px;
+  height: 17px;
+}
+
+.user_bg.pwd_bg {
+  margin-top: 3px;
+}
+
+input {
+  width: 100%;
+  height: 100%;
+  font-size: 14px;
+  color: #333;
+  margin-left: 12px;
+  border-left-width: 0;
+  border-top-width: 0;
+  border-right-width: 0;
+  border-bottom-width: 1px;
+  border-bottom-color: #eee;
+}
+
+button {
+  margin-left: 24px;
+  margin-right: 24px;
+  margin-top: 30px;
+  background: red;
+  color: white;
+  font-size: 16px;
+}
+
+.view_version {
+  text-align: center;
+  position: absolute;
+  bottom: 38px;
+}
+
+text {
+  width: 100%;
+  font-size: 13px;
+  color: #888;
+}
+
+.view_forget {
+  width: 100%;
+  margin-top: 24px;
+  text-align: right;
+  padding-right: 24px;
+}
+
+.text_forget {
+  width: 100%;
+  font-size: 15px;
+  color: #f00;
+}

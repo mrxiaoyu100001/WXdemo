@@ -1,0 +1,59 @@
+{
+  "pages": [
+    "pages/welcome/welcome",
+    "pages/login/login",
+    "pages/main/main",
+    "pages/persion/persion",
+    "pages/home/home",
+    "pages/channel/channel",
+    "pages/order/order",
+    "pages/sell/sell",
+    "pages/logs/logs",
+    "pages/index/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "美农伙伴",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#6e6d6b",
+    "selectedColor": "#e64340",
+    "borderStyle": "#eee",
+    "backgroundColor": "white",
+    "box-shadow": "0 0 6px 0",
+    "list": [
+      {
+        "pagePath": "pages/main/main",
+        "iconPath": "image/tab_home_main1.png",
+        "selectedIconPath": "image/tab_home_main.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/sell/sell",
+        "iconPath": "image/tab_home_menu1.png",
+        "selectedIconPath": "image/tab_home_menu.png",
+        "text": "售卖中心"
+      },
+      {
+        "pagePath": "pages/channel/channel",
+        "iconPath": "image/tab_home_persional1.png",
+        "selectedIconPath": "image/tab_home_persional.png",
+        "text": "渠道"
+      },
+      {
+        "pagePath": "pages/order/order",
+        "iconPath": "image/tab_home_persional1.png",
+        "selectedIconPath": "image/tab_home_persional.png",
+        "text": "订单"
+      },
+      {
+        "pagePath": "pages/persion/persion",
+        "iconPath": "image/tab_home_persional1.png",
+        "selectedIconPath": "image/tab_home_persional.png",
+        "text": "账户"
+      }
+    ]
+  }
+}

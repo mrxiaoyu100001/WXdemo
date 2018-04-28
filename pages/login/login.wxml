@@ -1,0 +1,24 @@
+<view>
+  <view class='img_icon_bg'>
+    <image class='img_icon' mode='aspectFit' src='/image/login_iv.png'></image>
+  </view>
+
+  <view class='user_bg'>
+    <image class='user_img' src='/image/login_user.png'></image>
+    <input id='input_account' placeholder='请输入你的用户名' type='text' onkeyup="this.value=this.value.replace(/\D/g,'')" onafterpaste="this.value=this.value.replace(/\D/g,'')" maxlength="11" confirm-type="next"></input>
+  </view>
+
+  <view class='user_bg pwd_bg'>
+    <image class='user_img' src='/image/login_password.png'></image>
+    <input id='input_pwd' placeholder='请输入你的密码' type='password' onkeyup="this.value=this.value.replace(/\D/g,'')" onafterpaste="this.value=this.value.replace(/\D/g,'')" confirm-type='next'></input>
+  </view>
+
+  <button id='button_login' bindtap='login'>登录</button>
+  <view class='view_forget'>
+    <text id='text_forget' class='text_forget' bindtap='forget'>忘记密码？</text>
+  </view>
+  <view class='view_version'>
+    <text id='text_version'>v1.0.0</text>
+  </view>
+
+</view>

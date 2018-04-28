@@ -1,0 +1,21 @@
+<!-- 主界面  -->
+<view>
+  <text>{{msg}}</text>
+  <text hidden='{{flag ? true : false}}'>xiaoyu-ceshiyuan</text>
+  <text class='aa'> {{a + b}} + {{c}} + d</text>
+
+  <view wx:for-items="{{[0, 1, 2, 3, msg]}}"> {{item}}> </view>
+
+  <view wx:for="{{array}}"> {{index}} : {{item.msg}}</view>
+
+  <block wx:for="{{array}}">
+    <view>{{index}}</view>
+    <view>{{item.msg}}</view>
+  </block>
+
+  <view wx:if="{{a > 1}}">1</view>
+  <view wx:elif="{{a > 1}}">2</view>
+  <view wx:else>3</view>
+  <icon type='success' size='40' color='red'></icon>
+  
+</view>
