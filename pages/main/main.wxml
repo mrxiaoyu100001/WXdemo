@@ -29,7 +29,7 @@
       </view>
     </scroll-view>
   </view>
-  <view class='cart'>
+  <view class="{{isShow? 'cart':'cart_hide'}}">
     <view class='cart_info'>
       <image class='cart_icon' src='/image/geren.png' />
       <view class='cart_info_bg'>
@@ -39,5 +39,11 @@
     </view>
     <text class='balance' bindtap='onBlance'>去结算</text>
   </view>
+  <view class="{{isShow?'shopping_hide':'shopping'}}" bindtap='onShopping'>
+  <view class='shopping_bg'>
+  <image style='width: 20px; height: 20px; margin-left: 8px;' src='/image/mark.png'/>
+  </view>
+  </view>
+  
 
 </view>

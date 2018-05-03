@@ -5,7 +5,8 @@ Page({
    * 页面的初始数据
    */
   data: {
-    goods: []
+    goods: [],
+    isShow: false
   },
 
   /**
@@ -22,7 +23,7 @@ Page({
         categoryId: '',
         nameLike: ''
       },
-      success: function(response) {
+      success: function (response) {
         console.log(response.data)
         // var goods = []
         // for (var i = 0; i < response.data.data.length; i++) {
@@ -35,9 +36,15 @@ Page({
     })
   },
 
-  onBlance: function() {
-    wx.showToast({
-      title: '点击按钮了',
+  onBlance: function () {
+    wx.navigateTo({
+      url: '../../pages/shoplist/index',
+    })
+  },
+  onShopping: function () {
+    var that = this;
+    that.setData({
+      isShow: true
     })
   },
 
