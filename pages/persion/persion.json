@@ -1,7 +1,7 @@
 {
   "navigationBarBackgroundColor": "#ffffff",
   "navigationBarTextStyle": "black",
-  "navigationBarTitleText": "个人中心",
-  "backgroundColor": "#eeeeee",
+  "navigationBarTitleText": "账户",
+  "backgroundColor": "#f6f6f6",
   "backgroundTextStyle": "light"
 }

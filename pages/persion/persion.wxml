@@ -1,4 +1,45 @@
 <!--个人中心  -->
-<view>
-<text>个人中心</text>
+<view class="my-container">
+  <view class='user-info'>
+    <image src='../../image/login_iv.png'></image>
+    <view class='words-info'>
+      <view class='nike-name'>
+      <text>美农</text>
+      </view>
+      <view class='account'>
+      <text>1234567890</text>
+      </view>
+    </view>
+  </view>
+
+  <view class='my-nav-details'>
+    <navigator class='my-nav'>
+      <view class='my-nav-info'>
+        <image class='my-nav-icon' src='../../image/all_orders.png'></image>
+        <text class='item-name'>我的店铺</text>
+        <image class='right-array' src='../../image/left_grey_array.png'></image>
+      </view>
+    </navigator>
+     <navigator class='my-nav'>
+      <view class='my-nav-info'>
+        <image class='my-nav-icon' src='../../image/all_orders.png'></image>
+        <text class='item-name'>绑定下级商户</text>
+        <image class='right-array' src='../../image/left_grey_array.png'></image>
+      </view>
+    </navigator>
+     <navigator class='my-waste'>
+      <view class='my-nav-info'>
+        <image class='my-nav-icon' src='../../image/all_orders.png'></image>
+        <text class='item-name'>店铺流水统计</text>
+        <image class='right-array' src='../../image/left_grey_array.png'></image>
+      </view>
+    </navigator>
+     <navigator class='my-setting'>
+      <view class='my-nav-info'>
+        <image class='my-nav-icon' src='../../image/all_orders.png'></image>
+        <text class='item-name'>设置</text>
+        <image class='right-array' src='../../image/left_grey_array.png'></image>
+      </view>
+    </navigator>
+  </view>
 </view>
