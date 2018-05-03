@@ -7,15 +7,17 @@ page {
   background: white;
 }
 
+view, text image {
+  margin: 0;
+  padding: 0;
+}
+
 .search {
   width: 100%;
   height: 30px;
   background-color: white;
   padding-top: 10px;
-  /* position: fixed; */
-   /* top: 0;  */
-  /* padding-bottom: 10px; */
-  /* z-index: 1; */
+  /* position: fixed; *//* top: 0;  *//* padding-bottom: 10px; *//* z-index: 1; */
 }
 
 .search_bg {
@@ -121,4 +123,58 @@ page {
 .add_image {
   width: 15px;
   height: 15px;
+}
+
+.cart {
+  height: 30px;
+  width: 120px;
+  border: 1px solid #eee;
+  background-color: red;
+  border-top-right-radius: 3em;
+  border-bottom-right-radius: 3em;
+  position: fixed;
+  bottom: 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.cart_info {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  background-color: black;
+  align-items: center;
+}
+.cart_icon {
+  width: 20px;
+  height: 20px;
+  margin-left: 8px;
+}
+
+.cart_info_bg {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 3px 3px 0px 3px;
+}
+
+.info_good {
+  line-height: 1;
+  font-size: 11px;
+  color: white;
+  margin-top: 3px;
+}
+
+.info_shop {
+  line-height: 1;
+  font-size: 9px;
+  color: white;
+  margin-top: 1px;
+}
+
+.balance {
+  line-height: 1;
+  font-size: 12px;
+  color: white;
+  margin-left: 3px;
 }
