@@ -14,7 +14,7 @@
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "美农伙伴",
+    "navigationBarTitleText": "测试",
     "navigationBarTextStyle": "black"
   },
   "tabBar": {
@@ -34,19 +34,19 @@
         "pagePath": "pages/sell/sell",
         "iconPath": "image/tab_home_menu1.png",
         "selectedIconPath": "image/tab_home_menu.png",
-        "text": "售卖中心"
+        "text": "测试一"
       },
       {
         "pagePath": "pages/channel/channel",
         "iconPath": "image/tab_home_persional1.png",
         "selectedIconPath": "image/tab_home_persional.png",
-        "text": "渠道"
+        "text": "测试二"
       },
       {
         "pagePath": "pages/order/order",
         "iconPath": "image/tab_home_persional1.png",
         "selectedIconPath": "image/tab_home_persional.png",
-        "text": "订单"
+        "text": "测试三"
       },
       {
         "pagePath": "pages/persion/persion",

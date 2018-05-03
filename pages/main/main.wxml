@@ -1,21 +1,43 @@
 <!-- 主界面  -->
 <view>
-  <text>{{msg}}</text>
-  <text hidden='{{flag ? true : false}}'>xiaoyu-ceshiyuan</text>
-  <text class='aa'> {{a + b}} + {{c}} + d</text>
+  <view class='search'>
+    <view class='search_bg'>
+      <image class='search_icon' src='/image/search.png'></image>
+      <input class='search_input' placeholder='请输入商品、厂家、商户名'></input>
+    </view>
+  </view>
+  <view class='goods_bg'>
+    <scroll-view scroll-x="true" un>
+      <view style='margin-bottom: 20px;' wx:for="{{goods}}" wx:for-index="index" wx:for-item="item" wx:key="id">
+        <view class='good_bg'>
+          <image class='pic_good' src="{{item.pic}}_m" mode="aspectFill" lazy-load="true" />
+          <view class='good_info'>
+            <view class='info_row'>
+              <text class='title'>{{item.characteristic}}</text>
+              <text class='orther_title'>{{item.recommendStatusStr}}</text>
+            </view>
+            <view class='address_info_row'>
+              <text class='addres'>{{item.name}}</text>
+              <text class='orther_title'>{{item.statusStr}}</text>
+            </view>
+            <view class='price_info'>
+              <text class='price_text'>{{item.recommendStatusStr}}</text>
+              <image class='add_image' src='/image/add.png'></image>
+            </view>
+          </view>
+        </view>
+      </view>
+    </scroll-view>
+  </view>
+  <view class='cart'>
+    <view class='cart_info'>
+      <image class='cart_icon' src='/image/geren.png' />
+      <view class='cart_info_bg'>
+        <text class='info_good'>3件商品</text>
+        <text class='info_shop'>2家店铺</text>
+      </view>
+    </view>
+    <text class='balance'>去结算</text>
+  </view>
 
-  <view wx:for-items="{{[0, 1, 2, 3, msg]}}"> {{item}}> </view>
-
-  <view wx:for="{{array}}"> {{index}} : {{item.msg}}</view>
-
-  <block wx:for="{{array}}">
-    <view>{{index}}</view>
-    <view>{{item.msg}}</view>
-  </block>
-
-  <view wx:if="{{a > 1}}">1</view>
-  <view wx:elif="{{a > 1}}">2</view>
-  <view wx:else>3</view>
-  <icon type='success' size='40' color='red'></icon>
-  
 </view>
