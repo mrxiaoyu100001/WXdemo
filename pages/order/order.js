@@ -5,7 +5,8 @@ Page({
    * 页面的初始数据
    */
   data: {
-  
+    navList:["我购买的","我售卖的"]
+    current: 0,//当前选中的Tab项
   },
 
   /**
@@ -13,6 +14,12 @@ Page({
    */
   onLoad: function (options) {
   
+  },
+
+  tabItemClick:function(e){
+    this.setData({
+      current:e.cu
+    })
   },
 
   /**

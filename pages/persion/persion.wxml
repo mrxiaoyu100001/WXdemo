@@ -4,7 +4,7 @@
     <image src='../../image/login_iv.png'></image>
     <view class='words-info'>
       <view class='nike-name'>
-      <text>美农</text>
+      <text>joe</text>
       </view>
       <view class='account'>
       <text>1234567890</text>
