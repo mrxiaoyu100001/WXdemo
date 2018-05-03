@@ -1,6 +1,49 @@
-<view class="order-container">
-    <view class='head-nav'>
-      <text class='my-buy'>我购买的</text>
-       <text class='my-sell'>我售卖的</text>
+<!-- 列表模板 -->
+<template name="order-template">
+  <view wx:if="{{data.length>0}}" class="has-order">
+    <view wx:for="{{data}}" wx:key="*this" id='{{item.order_id}}'>
+      <view class='order-head'>
+        <text>{{item.merchantName}}</text>
+      </view>
+      <view wx:for="{{data.order_goods}}" wx:key="*this" class='goods-content'>
+        <view class='goods-info'>
+          <image src='{{item.image_url}}'></image>
+          <view>
+            <text>{{item.good_name}}</text>
+            <text>{{item.status}}</text>
+          </view>
+          <view>
+            <text>x{{item.good_num}}袋</text>
+            <text>{{item.good_weight}}kg/袋</text>
+            <text>{{item.ship_price}}</text>
+          </view>
+          <view>
+            <text class='text-price'>#{{item.price}}</text>
+          </view>
+           <view class='btn-deliver'>
+            <text class='text-deliver'>{{item.deliver_status}}</text>
+          </view>
+           <view class='btn-contact'>
+            <text class='text-price'>联系司机</text>
+          </view>
+        </view>
+      </view>
     </view>
+  </view>
+   <view wx:else class="no-order">您暂时还没有该类订单</view>
+</template>
+<view class='my-container'>
+  <view class='tablist'>
+    <view wx:for="{{tabList}}" class='item {{activeIndex==index?"select":""}}' data-pos='{{index}}' bindtap='tabItemClick'>
+      <text>{{item}}</text>
+    </view>
+  </view>
+  <view>
+    <view hidden='{{activeIndex!=0}}'>
+       <template is="order-template" data="{{data:allOrder}}"></template>
+    </view>
+     <view hidden='{{activeIndex!=1}}'>
+       <template is="order-template" data="{{data:allOrder}}"></template>
+    </view>
+  </view>
 </view>

@@ -1,29 +1,39 @@
 page {
-  font-family: -apple-system-font, Helvetica Neue, Helvetica, sans-serif;
+  display: flex;
+  flex-direction: column;
   height: 100%;
-  width: 100%;
   background: #f6f6f6;
 }
 
-.head-nav {
-    width: 100%;
-    height: 94rpx;
-    background-color: white;
-    display: flex;
-    flex-direction: row;
-}
-.my-buy{
-    width: 50%;
-    text-align: right;
-    line-height: 94rpx;
-    font-size: 32rpx;
-    margin-right: 30rpx;
+.tablist {
+  display: flex;
+  background: #fff;
+  height: 100rpx;
+  padding-right: 180rpx;
+  padding-left: 180rpx;
 }
 
-.my-sell{
-    width: 50%;
-    text-align: left;
-    line-height: 94rpx;
-    font-size: 32rpx;
-    margin-left: 30rpx;
+.tablist .item {
+  flex: auto;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  font-size: 11pt;
+  color: black;
 }
+
+.tablist .item.select {
+    color:black;
+}
+
+.tablist .item.select::after {
+    content: "";
+    width: 50rpx;
+    height: 3rpx;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    background: black;
+}
+

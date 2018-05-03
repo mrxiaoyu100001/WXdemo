@@ -5,8 +5,117 @@ Page({
    * 页面的初始数据
    */
   data: {
-    navList:["我购买的","我售卖的"]
-    current: 0,//当前选中的Tab项
+    tabList:["我购买的","我售卖的"],
+    activeIndex: "",
+    // 初始化将allOrder置为空数组
+    allOrder: [
+      { order_id:1,
+        merchantName:"哈哈镜",
+        order_goods:[
+          {             image_url:"http://mpic.tiankong.com/669/9fe/6699fe29299550c97fc5d14092c88a82/640.jpg@!670w",
+           good_name: "",
+           status:"待发货",
+           good_num:100,
+           good_weight:25,
+           ship_price:"免配送费",
+           price:"8290",
+           deliver_status:"我已发货"
+           },
+          {
+            image_url: "http://mpic.tiankong.com/669/9fe/6699fe29299550c97fc5d14092c88a82/640.jpg@!670w",
+            good_name: "",
+            status: "待发货",
+            good_num: 100,
+            good_weight: 25,
+            ship_price: "免配送费",
+            price: "8290",
+            deliver_status: "我已发货"
+          },
+          {
+            image_url: "http://mpic.tiankong.com/669/9fe/6699fe29299550c97fc5d14092c88a82/640.jpg@!670w",
+            good_name: "",
+            status: "待发货",
+            good_num: 100,
+            good_weight: 25,
+            ship_price: "免配送费",
+            price: "8290",
+            deliver_status: "我已发货"
+          }
+        ]
+      },
+      {
+        order_id: 1,
+        merchantName: "哈哈镜",
+        order_goods: [
+          {
+            image_url: "http://mpic.tiankong.com/669/9fe/6699fe29299550c97fc5d14092c88a82/640.jpg@!670w",
+            good_name: "",
+            status: "待发货",
+            good_num: 100,
+            good_weight: 25,
+            ship_price: "免配送费",
+            price: "8290",
+            deliver_status: "我已发货"
+          },
+          {
+            image_url: "http://mpic.tiankong.com/669/9fe/6699fe29299550c97fc5d14092c88a82/640.jpg@!670w",
+            good_name: "",
+            status: "待发货",
+            good_num: 100,
+            good_weight: 25,
+            ship_price: "免配送费",
+            price: "8290",
+            deliver_status: "我已发货"
+          },
+          {
+            image_url: "http://mpic.tiankong.com/669/9fe/6699fe29299550c97fc5d14092c88a82/640.jpg@!670w",
+            good_name: "",
+            status: "待发货",
+            good_num: 100,
+            good_weight: 25,
+            ship_price: "免配送费",
+            price: "8290",
+            deliver_status: "我已发货"
+          }
+        ]
+      },
+      {
+        order_id: 1,
+        merchantName: "哈哈镜",
+        order_goods: [
+          {
+            image_url: "http://mpic.tiankong.com/669/9fe/6699fe29299550c97fc5d14092c88a82/640.jpg@!670w",
+            good_name: "",
+            status: "待发货",
+            good_num: 100,
+            good_weight: 25,
+            ship_price: "免配送费",
+            price: "8290",
+            deliver_status: "我已发货"
+          },
+          {
+            image_url: "http://mpic.tiankong.com/669/9fe/6699fe29299550c97fc5d14092c88a82/640.jpg@!670w",
+            good_name: "",
+            status: "待发货",
+            good_num: 100,
+            good_weight: 25,
+            ship_price: "免配送费",
+            price: "8290",
+            deliver_status: "我已发货"
+          },
+          {
+            image_url: "http://mpic.tiankong.com/669/9fe/6699fe29299550c97fc5d14092c88a82/640.jpg@!670w",
+            good_name: "",
+            status: "待发货",
+            good_num: 100,
+            good_weight: 25,
+            ship_price: "免配送费",
+            price: "8290",
+            deliver_status: "我已发货"
+          }
+        ]
+      }
+    ]
   },
 
   /**
@@ -18,7 +127,7 @@ Page({
 
   tabItemClick:function(e){
     this.setData({
-      current:e.cu
+      activeIndex: e.currentTarget.dataset.pos
     })
   },
 
