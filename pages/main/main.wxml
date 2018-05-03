@@ -1,14 +1,14 @@
 <!-- 主界面  -->
 <view>
-   <view class='search'> 
+  <view class='search'>
     <view class='search_bg'>
       <image class='search_icon' src='/image/search.png'></image>
       <input class='search_input' placeholder='请输入商品、厂家、商户名'></input>
     </view>
-   </view> 
+  </view>
   <view class='goods_bg'>
     <scroll-view scroll-x="true" un>
-      <view style='margin-bottom: 20px;' wx:for="{{goods}}" wx:for-index="index" wx:for-item="item">
+      <view style='margin-bottom: 20px;' wx:for="{{goods}}" wx:for-index="index" wx:for-item="item" wx:key="id">
         <view class='good_bg'>
           <image class='pic_good' src="{{item.pic}}_m" mode="aspectFill" lazy-load="true" />
           <view class='good_info'>
@@ -29,4 +29,15 @@
       </view>
     </scroll-view>
   </view>
+  <view class='cart'>
+    <view class='cart_info'>
+      <image class='cart_icon' src='/image/geren.png' />
+      <view class='cart_info_bg'>
+        <text class='info_good'>3件商品</text>
+        <text class='info_shop'>2家店铺</text>
+      </view>
+    </view>
+    <text class='balance'>去结算</text>
+  </view>
+
 </view>
