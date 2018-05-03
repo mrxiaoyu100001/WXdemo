@@ -37,7 +37,7 @@
         <text class='info_shop'>2家店铺</text>
       </view>
     </view>
-    <text class='balance'>去结算</text>
+    <text class='balance' bindtap='onBlance'>去结算</text>
   </view>
 
 </view>

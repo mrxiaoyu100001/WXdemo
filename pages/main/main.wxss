@@ -173,6 +173,7 @@ view, text image {
 }
 
 .balance {
+  width: 40px;
   line-height: 1;
   font-size: 12px;
   color: white;
