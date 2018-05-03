@@ -10,7 +10,8 @@
     "pages/sell/sell",
     "pages/logs/logs",
     "pages/index/index",
-    "pages/shoplist/index"
+    "pages/shoplist/index",
+    "pages/details/index"
   ],
   "window": {
     "backgroundTextStyle": "light",

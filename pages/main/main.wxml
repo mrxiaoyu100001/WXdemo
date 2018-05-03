@@ -9,7 +9,7 @@
   <view class='goods_bg'>
     <scroll-view scroll-x="true" un>
       <view style='margin-bottom: 20px;' wx:for="{{goods}}" wx:for-index="index" wx:for-item="item" wx:key="id">
-        <view class='good_bg'>
+        <view class='good_bg' bindtap='onItemClick' data-id="{{item.id}}">
           <image class='pic_good' src="{{item.pic}}_m" mode="aspectFill" lazy-load="true" />
           <view class='good_info'>
             <view class='info_row'>
