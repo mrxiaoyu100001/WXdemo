@@ -1,2 +1,10 @@
 <!--pages/details/index.wxml-->
-<text>pages/details/index.wxml</text>
+
+<view>
+  <block wx:for-items="{{goods}}" wx:for-index="position" wx:key="id">
+    <view>
+      <radio>1</radio>
+      <text>{{item.shopName}}</text>
+    </view>
+  </block>
+</view>

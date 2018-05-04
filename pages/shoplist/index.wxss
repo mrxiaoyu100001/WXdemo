@@ -1,1 +1,187 @@
 /* pages/shoplist/index.wxss */
+
+page {
+  width: 100%;
+  height: 100%;
+  line-height: 1;
+  margin: 0;
+  padding: 0;
+  background-color: #eee;
+}
+
+.content_bg {
+  width: 100%;
+  height: 100%;
+}
+
+.shop_bg {
+  width: 100%;
+  height: 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: white;
+  margin-top: 10px;
+  padding: 0 10px 0;
+}
+
+.choose_pic {
+  height: 17px;
+  width: 17px;
+}
+
+.shop_name {
+  font-size: 13px;
+  color: #555;
+  margin-left: 5px;
+}
+
+.address_name {
+  font-size: 9px;
+  color: #999;
+  margin-left: 5px;
+}
+
+.good_bg {
+  width: 100%;
+  height: 100px;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  padding: 0 10px 0;
+}
+
+.good_info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.good_pic {
+  width: 60px;
+  height: 80px;
+  margin-left: 5px;
+}
+
+.good_info_bg {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 10px 20px 0px 10px;
+}
+
+.good_name {
+  font-size: 12px;
+  color: #333;
+  font-weight: bold;
+}
+
+.spac_bg {
+  width: 100%;
+  height: 10px;
+  display: flex;
+  flex-direction: row;
+  margin-top: 5px;
+}
+
+.spac_name {
+  font-size: 9px;
+  color: #999;
+  flex-grow: 1;
+  text-align: left;
+}
+
+.free_name {
+  line-height: 1;
+  font-size: 9px;
+  color: #999;
+  flex-grow: 1;
+  text-align: right;
+}
+
+.aaa.spac_bg {
+  margin-top: 40px;
+  height: 20px;
+}
+
+.price_bg {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-grow: 10;
+}
+
+.price_num {
+  font-size: 15px;
+  color: red;
+  line-height: 1;
+  background: green;
+}
+
+.price_unit {
+  font-size: 10px;
+  color: #999;
+}
+
+.number_bg.price_bg {
+  flex-grow: 1;
+  background: #eee;
+  border: 1px solid #eee;
+  border-radius: 3rem;
+  padding: 0 3px 0;
+}
+
+.number_icon {
+  width: 17px;
+  height: 17px;
+  flex-grow: 1;
+}
+
+.number_value {
+  font-size: 13px;
+  color: #333;
+  flex-grow: 3;
+  text-align: center;
+}
+
+.submit_bg {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  background: white;
+  position: fixed;
+  bottom: 0;
+  align-items: center;
+}
+
+.money_bg {
+  height: 100%;
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+}
+.total_price_bg {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 10;
+}
+.money.choose_pic {
+  margin-left: 15px;
+}
+
+.money.price_unit {
+  font-size: 11px;
+  flex: 0;
+  color: red;
+}
+
+.submit {
+  flex: 1;
+  height: 100%;
+  background: black;
+  color: white;
+  font-size: 14px;
+  line-height: 40px;
+  text-align: center;
+}

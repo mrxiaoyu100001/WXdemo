@@ -1,2 +1,47 @@
-<!--pages/shoplist/index.wxml-->
-<text>pages/shoplist/index.wxml</text>
+<!--pages/details/index.wxml-->
+<view class='content_bg'>
+  <block wx:for-items="{{goods}}" wx:for-index="position" wx:key="id">
+    <view class='shop_bg'>
+      <image class='choose_pic' src='/image/un_select.png'></image>
+      <text class='shop_name'>{{item.shopName}}</text>
+      <text class='address_name'>{{item.address}}</text>
+    </view>
+    <block wx:for-items="{{item.goodList}}" wx:for-index="position" wx:key="id">
+      <view class='good_bg'>
+        <view class='good_info'>
+          <image class='choose_pic' src='/image/un_select.png'></image>
+          <image class='good_pic' src='{{item.pic}}'></image>
+        </view>
+        <view class='good_info_bg'>
+          <text class='good_name'>{{item.goodName}}</text>
+          <view class='spac_bg'>
+            <text class='spac_name'>{{item.spec}}</text>
+            <text class='free_name'>{{item.free}}</text>
+          </view>
+          <view class='aaa spac_bg'>
+            <view class='price_bg'>
+              <text class='price_num'>￥{{item.price}}</text>
+              <text class='price_unit'>/袋</text>
+            </view>
+            <view class='number_bg price_bg'>
+              <image class='number_icon' src='/image/close.png'></image>
+              <text class='number_value'>{{item.goodNum}}</text>
+              <image class='number_icon' src='/image/add.png'></image>
+            </view>
+          </view>
+        </view>
+      </view>
+    </block>
+  </block>
+  <view class='submit_bg'>
+    <image class='money choose_pic' src='/image/select.png'></image>
+    <view class='money_bg'>
+      <view class='total_price_bg'>
+        <text class='price_num'>￥{{totalFee}}</text>
+        <text class='money price_unit'>.11</text>
+      </view>
+      <text class='price_unit'>另需配送费¥{{otherFee}}</text>
+    </view>
+     <text class='submit'>去结算</text>
+  </view>
+</view>
