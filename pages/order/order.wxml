@@ -5,26 +5,26 @@
       <view class='order-head'>
         <text>{{item.merchantName}}</text>
       </view>
-      <view wx:for="{{data.order_goods}}" wx:key="*this" class='goods-content'>
+      <view wx:for="{{item.order_goods}}" wx:key="*this" class='goods-content'>
         <view class='goods-info'>
           <image src='{{item.image_url}}'></image>
           <view>
-            <text>{{item.good_name}}</text>
-            <text>{{item.status}}</text>
-          </view>
-          <view>
-            <text>x{{item.good_num}}袋</text>
-            <text>{{item.good_weight}}kg/袋</text>
-            <text>{{item.ship_price}}</text>
-          </view>
-          <view>
-            <text class='text-price'>#{{item.price}}</text>
-          </view>
-           <view class='btn-deliver'>
-            <text class='text-deliver'>{{item.deliver_status}}</text>
-          </view>
-           <view class='btn-contact'>
-            <text class='text-price'>联系司机</text>
+            <view class='good-name'>
+              <text style='font-size:36rpx;'>{{item.good_name}}</text>
+              <text style='float:right;'>{{item.status}}</text>
+            </view>
+            <view style='margin-top:10rpx'>
+              <text>x{{item.good_num}}袋</text>
+              <text style='margin-left:50rpx;'>{{item.good_weight}}kg/袋</text>
+              <text style='float:right'>{{item.ship_price}}</text>
+            </view>
+            <view style='margin-top:10rpx'>
+              <text class='text-price' style='color:red;font-size:36rpx;'>￥{{item.price}}</text>
+            </view>
+            <view style='display:flex;flex-direction: row;'>
+              <text class='text-deliver'>{{item.deliver_status}}</text>         
+              <text class='text-contact'>联系司机</text>
+            </view>
           </view>
         </view>
       </view>

@@ -37,3 +37,67 @@ page {
     background: black;
 }
 
+.has-order{
+  font-size: 24rpx;
+}
+
+.has-order > view{
+  background-color: white;
+}
+
+.has-order >view:not(:nth-child(1)){
+  margin-top: 20rpx;
+}
+
+.order-head{
+  height: 30rpx;
+  padding: 25rpx 20rpx;
+  font-size: 36rpx;
+  border: 2rpx solid #f0f0f0;
+}
+
+.goods-content{
+  margin: 0 26rpx;
+  display: flex;
+  flex-direction:column;
+}
+
+.goods-info{
+  width: 100%;
+  height: 240rpx;
+  padding: 34rpx 0;
+  border-bottom: 1rpx solid #f0f0f0;
+}
+
+.goods-info>view{
+  width: 100%;
+  font-size: 30rpx;
+}
+.goods-info>image{
+  width: 180rpx;
+  height: 180rpx;
+  margin-right: 26rpx;
+  float: left;
+  display: block;
+}
+
+.text-deliver{
+  float:left;
+  font-size:32rpx;
+  color: white;
+  margin-top: 30rpx;
+  padding:5rpx 20rpx;
+  background-color: black;
+  border-radius: 3em;
+  border: 2rpx solid black;
+}
+
+.text-contact{
+  margin-top: 30rpx;
+  margin-left:45rpx;
+  font-size:32rpx;
+  color: black;
+  padding:5rpx 20rpx;
+  border-radius: 3em;
+  border: 2rpx solid black;
+}

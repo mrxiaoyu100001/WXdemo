@@ -12,8 +12,9 @@ Page({
       { order_id:1,
         merchantName:"哈哈镜",
         order_goods:[
-          {             image_url:"http://mpic.tiankong.com/669/9fe/6699fe29299550c97fc5d14092c88a82/640.jpg@!670w",
-           good_name: "",
+          {
+            image_url:"http://pic1.win4000.com/wallpaper/7/58eee4b41f84f.jpg",
+           good_name: "喜洋洋",
            status:"待发货",
            good_num:100,
            good_weight:25,
@@ -22,8 +23,8 @@ Page({
            deliver_status:"我已发货"
            },
           {
-            image_url: "http://mpic.tiankong.com/669/9fe/6699fe29299550c97fc5d14092c88a82/640.jpg@!670w",
-            good_name: "",
+            image_url: "http://pic1.win4000.com/wallpaper/7/58eee4b41f84f.jpg",
+            good_name: "喜洋洋",
             status: "待发货",
             good_num: 100,
             good_weight: 25,
@@ -32,8 +33,8 @@ Page({
             deliver_status: "我已发货"
           },
           {
-            image_url: "http://mpic.tiankong.com/669/9fe/6699fe29299550c97fc5d14092c88a82/640.jpg@!670w",
-            good_name: "",
+            image_url: "http://pic1.win4000.com/wallpaper/7/58eee4b41f84f.jpg",
+            good_name: "喜洋洋",
             status: "待发货",
             good_num: 100,
             good_weight: 25,
@@ -48,8 +49,8 @@ Page({
         merchantName: "哈哈镜",
         order_goods: [
           {
-            image_url: "http://mpic.tiankong.com/669/9fe/6699fe29299550c97fc5d14092c88a82/640.jpg@!670w",
-            good_name: "",
+            image_url: "http://pic1.win4000.com/wallpaper/7/58eee4b41f84f.jpg",
+            good_name: "喜洋洋",
             status: "待发货",
             good_num: 100,
             good_weight: 25,
@@ -58,8 +59,8 @@ Page({
             deliver_status: "我已发货"
           },
           {
-            image_url: "http://mpic.tiankong.com/669/9fe/6699fe29299550c97fc5d14092c88a82/640.jpg@!670w",
-            good_name: "",
+            image_url: "http://pic1.win4000.com/wallpaper/7/58eee4b41f84f.jpg",
+            good_name: "喜洋洋",
             status: "待发货",
             good_num: 100,
             good_weight: 25,
@@ -68,8 +69,8 @@ Page({
             deliver_status: "我已发货"
           },
           {
-            image_url: "http://mpic.tiankong.com/669/9fe/6699fe29299550c97fc5d14092c88a82/640.jpg@!670w",
-            good_name: "",
+            image_url: "http://pic1.win4000.com/wallpaper/7/58eee4b41f84f.jpg",
+            good_name: "喜洋洋",
             status: "待发货",
             good_num: 100,
             good_weight: 25,
@@ -84,8 +85,8 @@ Page({
         merchantName: "哈哈镜",
         order_goods: [
           {
-            image_url: "http://mpic.tiankong.com/669/9fe/6699fe29299550c97fc5d14092c88a82/640.jpg@!670w",
-            good_name: "",
+            image_url: "http://pic1.win4000.com/wallpaper/7/58eee4b41f84f.jpg",
+            good_name: "喜洋洋",
             status: "待发货",
             good_num: 100,
             good_weight: 25,
@@ -94,8 +95,8 @@ Page({
             deliver_status: "我已发货"
           },
           {
-            image_url: "http://mpic.tiankong.com/669/9fe/6699fe29299550c97fc5d14092c88a82/640.jpg@!670w",
-            good_name: "",
+            image_url: "http://pic1.win4000.com/wallpaper/7/58eee4b41f84f.jpg",
+            good_name: "喜洋洋",
             status: "待发货",
             good_num: 100,
             good_weight: 25,
@@ -104,8 +105,8 @@ Page({
             deliver_status: "我已发货"
           },
           {
-            image_url: "http://mpic.tiankong.com/669/9fe/6699fe29299550c97fc5d14092c88a82/640.jpg@!670w",
-            good_name: "",
+            image_url: "http://pic1.win4000.com/wallpaper/7/58eee4b41f84f.jpg",
+            good_name: "喜洋洋",
             status: "待发货",
             good_num: 100,
             good_weight: 25,
